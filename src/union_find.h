@@ -1,3 +1,4 @@
+#pragma once
 #include <vector>
 using namespace std;
 class UF
@@ -5,15 +6,14 @@ class UF
 public:
     UF(int N);
 public:
-    void Union(int q, int p){
-
-    };
-    int find(int p){
+    virtual void Union(int q, int p) = 0;
+    virtual int find(int p){
         return id[p];
     };
-    bool connected(int q, int p);
-    int Count();
-private:
+    virtual bool connected(int q, int p);
+    virtual int Count();
+    void show();
+public:
     vector<int> id;
     int count;
 };
