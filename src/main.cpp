@@ -1,6 +1,7 @@
 #include "union_find.h"
 #include "quick_find.h"
 #include "quick_union.h"
+#include "k_quick_union.h"
 #include <fstream> 
 #include <iostream>
 using namespace std;
@@ -23,6 +24,8 @@ int main()
     testUF(&qf,"QF");
     QU qu(N);
     testUF(&qu,"QU");
+    KQU kqu(N);
+    testUF(&kqu,"KQU");
     system("pause");
 }
 int testUF(UF *uf, char *str)

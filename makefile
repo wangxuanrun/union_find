@@ -19,11 +19,13 @@ TARGET := ../$(TARGET_NAME)
 # src files & obj files
 INC := src/union_find.h \
 	   src/quick_find.h \
-	   src/quick_union.h
+	   src/quick_union.h \
+	   src/k_quick_union.h
 SRC := src/main.cpp \
 		src/union_find.cpp \
 		src/quick_find.cpp \
-		src/quick_union.cpp
+		src/quick_union.cpp \
+		src/k_quick_union.cpp
 OBJ := main.o
 
 # clean files list
